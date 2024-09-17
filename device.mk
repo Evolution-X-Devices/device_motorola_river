@@ -70,6 +70,12 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
     vendor.lineage.livedisplay@2.0-service-sysfs
 
+# Moto Camera 2
+TARGET_MOTCAMERA2 := denali
+TARGET_USES_MOTCAMERA2 := true
+
+$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
+
 # NFC and Secure Element packages
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
