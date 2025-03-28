@@ -206,10 +206,10 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/lib/libmot_gpu_mapper.so;DISABLE_CHECKELF
 
 # Camera - mmcamera
-system/lib/libmmcamera_faceproc2.so
-system/lib/libmmcamera_faceproc.so
-system/lib64/libmmcamera_faceproc2.so
-system/lib64/libmmcamera_faceproc.so
+system/lib/libmmcamera_faceproc2.so;MODULE_SUFFIX=_system
+system/lib/libmmcamera_faceproc.so;MODULE_SUFFIX=_system
+system/lib64/libmmcamera_faceproc2.so;MODULE_SUFFIX=_system
+system/lib64/libmmcamera_faceproc.so;MODULE_SUFFIX=_system
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_frame_algorithm.so

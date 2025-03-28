@@ -15,6 +15,7 @@ from extract_utils.fixups_blob import (
 
 from extract_utils.fixups_lib import (
     lib_fixup_remove,
+    lib_fixups,
     lib_fixup_vendorcompat,
     lib_fixups_user_type,
     libs_proto_3_9_1,
@@ -34,11 +35,19 @@ namespace_imports = [
     "vendor/qcom/opensource/dataservices",
 ]
 
+def lib_fixup_system_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'system' else None
+
 lib_fixups: lib_fixups_user_type = {
     libs_proto_3_9_1: lib_fixup_vendorcompat,
     (
         'libc2dcolorconvert',
     ): lib_fixup_remove,
+    **lib_fixups,
+    (
+        'libmmcamera_faceproc',
+        'libmmcamera_faceproc2'
+    ): lib_fixup_system_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
