@@ -207,9 +207,9 @@ vendor/lib/libmot_gpu_mapper.so;DISABLE_CHECKELF
 
 # Camera - mmcamera
 system/lib/libmmcamera_faceproc2.so;MODULE_SUFFIX=_system
-system/lib/libmmcamera_faceproc.so;MODULE_SUFFIX=_system
+system/lib/libmmcamera_faceproc.so;MODULE_SUFFIX=_system;DISABLE_CHECKELF
 system/lib64/libmmcamera_faceproc2.so;MODULE_SUFFIX=_system
-system/lib64/libmmcamera_faceproc.so;MODULE_SUFFIX=_system
+system/lib64/libmmcamera_faceproc.so;MODULE_SUFFIX=_system;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_frame_algorithm.so
