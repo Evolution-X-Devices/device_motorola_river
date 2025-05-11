@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "device_motorola_sdm632-common",
+    "target_path": "device/motorola/sdm632-common",
+    "remote": "evo-devices"
+  },
+  {
+    "repository": "Deivid-21s-Sources/proprietary_vendor_motorola_river",
+    "target_path": "vendor/motorola/river",
+    "remote": "github-non-los",
+    "branch": "lineage-22.2"
+  }
+]
