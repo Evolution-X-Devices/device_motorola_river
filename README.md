@@ -1,4 +1,3 @@
-
 Device configuration for Motorola g7 (river)
 ==================================
 
@@ -18,3 +17,13 @@ Rear Camera  | 12 MP (f/1.8, 1.25µm, PDAF)
 Front Camera | 8 MP 1.12µm, HDR
 
 ![Motorola g7](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g7-1.jpg "Motorola g7")
+
+
+```
+
+SPDX-FileCopyrightText: The LineageOS Project
+
+SPDX-License-Identifier: Apache-2.0
+
+```
+
