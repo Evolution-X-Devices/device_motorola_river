@@ -17,15 +17,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/motorola/river/river-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    AvoidAppsInCutoutOverlay \
-    NoCutoutOverlay
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 560dpi
@@ -92,6 +83,19 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     Tag \
     android.hardware.nfc@1.2-service
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    FrameworksResDevice \
+    SettingsProviderResDevice \
+    SystemUIResDevice
+
+PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
+    NoCutoutOverlay
 
 # Sensors
 PRODUCT_COPY_FILES += \
