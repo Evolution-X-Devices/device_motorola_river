@@ -19,4 +19,5 @@ PRODUCT_NAME := lineage_river
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="river_retail-user 10 QPUS30.52-33-11 df129 release-keys" \
-    BuildFingerprint=motorola/river_retail/river:10/QPUS30.52-33-11/df129:user/release-keys
+    BuildFingerprint=motorola/river_retail/river:10/QPUS30.52-33-11/df129:user/release-keys \
+    DeviceProduct=river_retail
