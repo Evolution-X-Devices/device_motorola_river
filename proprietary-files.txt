@@ -350,6 +350,9 @@ vendor/firmware/crus_sp_rx6.bin
 vendor/firmware/crus_sp_rx7.bin
 
 # NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp-gcf.conf
 vendor/lib64/libpn553_fw.so
 
 # Sensors - Configs
