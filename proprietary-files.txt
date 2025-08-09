@@ -355,6 +355,10 @@ vendor/firmware/marley-dsp2-aov-frontend.wmfw
 vendor/firmware/marley-dsp2-aov-vrgain.bin
 vendor/firmware/marley-dsp3-aov-control.wmfw
 
+# Thermal
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-river.conf
+
 # Vibrator firmware
 vendor/firmware/aw869x_haptic.bin
 vendor/firmware/aw869x_rtp.bin
