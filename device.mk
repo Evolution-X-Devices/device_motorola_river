@@ -25,11 +25,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2270
 TARGET_SCREEN_WIDTH := 1080
 
-# Fingerprint
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc \
-    $(LOCAL_PATH)/configs/keylayout/uinput-egis.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-egis.kl
-
 # Init
 PRODUCT_PACKAGES += \
     init.river.rc

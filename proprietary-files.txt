@@ -330,6 +330,8 @@ vendor/firmware/himax-tianmah-hx83112a-river.csv
 vendor/firmware/novatek_ts-tianman-NT36672A-181127-0b-river.bin
 
 # Fingerprint
+system/usr/idc/uinput-egis.idc:vendor/usr/idc/uinput-egis.idc
+system/usr/keylayout/uinput-egis.kl:vendor/usr/keylayout/uinput-egis.kl
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
 vendor/etc/init/init.ets.rc
