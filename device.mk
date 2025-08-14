@@ -34,8 +34,10 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
+    vendor.lineage.livedisplay-service.sdm \
     vendor.lineage.livedisplay@2.0-service-sysfs
+
+$(call soong_config_set,livedisplay_sdm,enable_dm,false)
 
 # Moto Camera 2
 TARGET_MOTCAMERA2 := denali
